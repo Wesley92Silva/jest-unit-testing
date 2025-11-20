@@ -1,4 +1,4 @@
-const calculaComissaoVenda = require('.')
+const calculaComissaoDeVenda = require('.')
 
 it('Se a lista estiver vazia, a comissão é zero', () =>{
     const resultadoAtual = calculaComissaoDeVenda([])
