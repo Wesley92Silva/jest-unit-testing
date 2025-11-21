@@ -69,7 +69,7 @@ it('Calcula a comissão especial', () => {
         quantidadeVendida: 4,
     }])
 
-    const resultadoEsperado = 1000
+    const resultadoEsperado = 10000
 
     expect(resultadoAtual).toBe(resultadoEsperado)
 })
