@@ -17,3 +17,19 @@ it('Calcula comissão quando tem apenas um item na lista', () =>{
 
     expect(resultadoAtual).toBe(resultadoEsperado)
 })
+
+it('Calcula comissão quando há mais de um item na lista', () =>{
+    const resultadoAtual = calculaComissaoDeVenda([{
+        id: 'PROD-123',
+        precoUnitario: 1000,
+        quantidadeVendida: 1,
+    },{
+        id: 'PROD-465',
+        precoUnitario: 100,
+        quantidadeVendida: 5,
+    }])
+
+    const resultadoEsperado = 75
+
+    expect(resultadoAtual).toBe(resultadoEsperado)
+})
